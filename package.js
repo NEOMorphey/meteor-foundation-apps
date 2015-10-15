@@ -1,15 +1,15 @@
 Package.describe({
-  name: 'rainhaven:foundation-apps',
+  name: 'neomorphey:foundation-apps',
   summary: 'Foundation for Apps. Packaged for Meteor',
-  version: '1.0.3',
-  git: 'https://github.com/RainHaven/meteor-foundation-apps.git'
+  version: '1.0.0',
+  git: 'https://github.com/NEOMorphey/meteor-foundation-apps.git'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
 
-  api.use('rainhaven:sass@1.0.1', ['client', 'server']);
-  api.imply('rainhaven:sass@1.0.1', ['client', 'server']);
+  api.use('neomorphey:sass@1.0.0', ['client', 'server']);
+  api.imply('neomorphey:sass@1.0.0', ['client', 'server']);
 
   // SCSS
   api.addFiles([
@@ -50,7 +50,7 @@ Package.onUse(function(api) {
     'scss/components/_accordion.scss',
     'scss/components/_typography.scss',
     'scss/components/_utilities.scss',
-  ], 'server');
+  ]);
 });
 
 Package.onTest(function(api) {
